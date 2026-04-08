@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import './Dashboard.css';
+import AnimalDetection from './AnimalDetection';
 
 const animals = [
   { type: 'Elephant', icon: '🐘' },
@@ -405,6 +406,10 @@ const Dashboard = () => {
           ))}
         </div>
       </div>
+
+      {/* Real AI Animal Detection */}
+      <AnimalDetection />
+
     </div>
   );
 };
